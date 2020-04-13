@@ -59,11 +59,6 @@ class OrderTableRow extends React.Component {
       <tr key="main" onClick={this.toggleExpander}>
         <td className="uk-text-nowrap">{this.props.index}.</td>
         <td>
-          {ordStatMap.get(
-            order.trackingHistory[order.trackingHistory.length - 1].status
-          )}
-        </td>
-        <td>
           {creationDate.getDate() +
             "/" +
             (creationDate.getMonth() + 1) +
@@ -97,6 +92,11 @@ class OrderTableRow extends React.Component {
                 minute: "2-digit"
               })}
           </small>
+        </td>
+        <td>
+          {ordStatMap.get(
+            order.trackingHistory[order.trackingHistory.length - 1].status
+          )}
         </td>
       </tr>,
       this.state.expanded && (
@@ -233,11 +233,11 @@ class App extends React.Component {
               <thead>
                 <tr>
                   <th className="uk-table-shrink" />
-                  <th className="uk-table-shrink">STATO</th>
                   <th>DATA CREAZIONE</th>
                   <th>DESTINATARIO</th>
                   <th>TIPO DI CONSEGNA</th>
                   <th>FASCIA DI CONSEGNA</th>
+                  <th className="uk-table-shrink">STATO</th>
                 </tr>
               </thead>
               <tbody>

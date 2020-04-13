@@ -1,9 +1,9 @@
 {
-  "name": "collapsible-table-order-rows-2",
+  "name": "collapsibletable-production",
   "keywords": [],
   "homepage": "https://codesandbox.io/s/0pqznm27q0",
   "main": "index.js",
-  "description": null,
+  "description": "",
   "version": "0.0.32",
   "dependencies": {
     "react-dom": "16.0.0",
