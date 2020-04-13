@@ -1,0 +1,23 @@
+{
+  "name": "collapsible-table-order-rows-2",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/0pqznm27q0",
+  "main": "index.js",
+  "description": null,
+  "version": "0.0.32",
+  "dependencies": {
+    "react-dom": "16.0.0",
+    "react": "16.0.0",
+    "d3-interpolate": "1.1.5",
+    "d3-ease": "1.0.3"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
